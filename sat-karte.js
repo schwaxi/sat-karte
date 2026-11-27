@@ -1,4 +1,4 @@
-// sat-karte v1.0.0
+// sat-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -272,7 +272,7 @@ class SatKarte extends HTMLElement {
 
 if (!customElements.get(TYPE18)) customElements.define(TYPE18, SatKarte);
 if (!window.customCards.some((c) => c.type === TYPE18)) {
-  window.customCards.push({ type: TYPE18, name: "Sat-Karte", description: "Sat-Receiver (Enigma2/Vu+): laufender Sender, Lieblingssender, Kanal +/- und Senderliste" });
+  window.customCards.push({ type: TYPE18, name: "Sat-Karte", description: "Sat-Receiver (Enigma2/Vu+): laufender Sender, Lieblingssender, Kanal +/- und Senderliste", preview: true });
 }
 }
 
